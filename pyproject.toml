@@ -1,0 +1,17 @@
+[tool.pyrefly]
+python-interpreter-path = "venv/Scripts/python.exe"
+search-path = [
+    ".",
+    "venv/Lib/site-packages"
+]
+ignore-missing-imports = [
+    "langchain_google_genai.*",
+    "langchain_core.*",
+    "jwt.*",
+    "jwt"
+]
+
+[tool.pyrefly.errors]
+missing-import = false
+missing-attribute = false
+not-callable = false
